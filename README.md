@@ -1,128 +1,125 @@
-# 📊 Sales Analytics Dashboard  
-**Diagnostic & Decision Intelligence**
 
-This project is a sales analytics system designed to move from **analysis → decision-making**.  
-It separates analytics into two clear layers so insights don’t get mixed with recommendations.
 
-- **A2 – Diagnostic Dashboard** → explains *what is happening and why*  
-- **A3 – Decision Dashboard** → focuses on *what should be done next*
 
-The goal is not just visualization, but **decision support** using real, imperfect business data.
 
----
 
-## 🔗 Live Dashboards
 
-- **A2 Diagnostic Dashboard:**  
-  https://xcompany-ai-sales-dashboard-bdel2x6pwedw8pcqmagvqc.streamlit.app
+# Sales Performance Diagnostics
+### Turning messy sales data into executive-ready decisions — built in two layers.
 
-- **A3 Decision Dashboard:**  
-  https://xcompany-ai-sales-dashboard-dsp5zzmrzjielnpwjfezp4.streamlit.app
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://streamlit.io)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)](https://plotly.com)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org)
 
 ---
 
-## 📁 Repository Structure
-```
-AI-Sales-Dashboard/
-│
-├── README.md
-├── sales_data.csv
-│
-├── A2_Diagnostic_Dashboard/
-│ ├── app.py
-│ ├── requirements.txt
-│ ├── case-study.md
-│ └── screenshots.png
-│
-├── A3_Decision_Dashboard/
-│ ├── app.py
-│ ├── requirements.txt
-│ ├── case-study.md
-│ └── screenshots.png
-```
+## 🔗 Live Demos
+
+| Dashboard | Purpose | Link |
+|-----------|---------|------|
+| **A2 — Diagnostic** | What's happening and why | [Launch →](https://xcompany-ai-sales-dashboard-bdel2x6pwedw8pcqmagvqc.streamlit.app) |
+| **A3 — Decision** | What to do about it | [Launch →](https://xcompany-ai-sales-dashboard-dsp5zzmrzjielnpwjfezp4.streamlit.app) |
 
 ---
 
-## 🔹 Project Overview
+## The Problem
 
-Many organizations have access to sales data but struggle to translate it into **clear, actionable decisions**.  
-This project addresses that gap by separating analytics into two intentional layers:
+Most BI tools mix diagnosis with recommendations — and the result is dashboards that show everything but tell you nothing.
 
-- A **diagnostic layer** for exploration, trends, and root-cause analysis  
-- A **decision layer** for executive-ready summaries, risk identification, and recommended actions  
+This system separates those concerns into two deliberate layers, mirroring how real analytics teams actually operate:
 
-This mirrors how real **business intelligence and analytics teams** structure their workflows.
+- **Diagnostic layer (A2)** — explore, investigate, root-cause
+- **Decision layer (A3)** — summarize, prioritize, act
 
----
-
-## 🧠 Robust Data Handling (Real-World Ready)
-
-To reflect real operational conditions, the dashboards are built with safety and robustness in mind:
-
-- Schema validation to prevent incorrect analysis  
-- Interactive column mapping for uploaded datasets  
-- Safe numeric coercion and cleaning  
-- Graceful handling of missing or imperfect data  
-
-The system is designed to **fail safely**, not crash or mislead users.
+The data is messy by design. Real sales data always is.
 
 ---
 
-## 🔍 A2 – Diagnostic Dashboard
+## A2 — Diagnostic Dashboard
 
-### Purpose  
-To explore sales performance, profitability, discount behavior, and regional trends in order to understand **what is happening and why**.
+> *What is happening, and why?*
 
-### Key Capabilities
-- Sales and profit trends over time  
-- Category and sub-category performance  
-- Regional and state-level analysis  
-- Discount vs profit risk analysis  
-- Interactive filtering and visual exploration  
+Built for analysts who need to dig. Not a summary — a full exploratory environment.
 
-### Preview
+**Capabilities:**
+- Sales and profit trend analysis over time
+- Category and sub-category performance breakdown
+- Regional and state-level heatmaps
+- Discount vs. profit risk scatter analysis
+- Fully interactive filters across all dimensions
+
 ![A2 Diagnostic Dashboard](A2_Diagnostic_Dashboard/screenshots.png)
 
 ---
 
-## 🎯 A3 – Decision Dashboard
+## A3 — Decision Dashboard
 
-### Purpose  
-To convert analytical findings into **clear, actionable business decisions** suitable for leadership and stakeholders.
+> *What should we do next?*
 
-### Key Capabilities
-- Executive KPI snapshot (Sales, Profit, Loss Orders)  
-- Profit risk by category and region  
-- Discount threshold impact analysis  
-- Identification of loss-making sub-categories  
-- Decision summaries with recommended actions  
-- Schema validation and column mapping for uploaded data  
+Built for stakeholders who need answers, not charts.
 
-### Preview
+**Capabilities:**
+- Executive KPI snapshot — Sales, Profit, Loss Order rate
+- Profit risk flagged by category and region
+- Discount threshold impact modeling
+- Loss-making sub-category identification
+- Decision summaries with recommended actions
+
 ![A3 Decision Dashboard](A3_Decision_Dashboard/screenshots.png)
 
 ---
 
-## 🛠️ Tech Stack
+## Built for Real Data
 
-- **Python**  
-- **Streamlit** – interactive dashboards  
-- **Pandas** – data processing  
-- **Plotly** – interactive visualizations  
+Both dashboards are hardened for production-grade messiness:
 
----
+- Schema validation before any analysis runs
+- Interactive column mapping for custom datasets
+- Safe numeric coercion and null handling
+- Graceful error states — won't crash, won't mislead
 
-## ✅ Key Takeaway
-
-This project demonstrates the ability to:
-
-- Perform structured exploratory analysis  
-- Separate diagnosis from decision-making  
-- Build user-safe, robust analytics tools  
-- Communicate insights clearly to non-technical stakeholders  
+Upload your own CSV. It'll adapt.
 
 ---
 
-## 👤 Author
-**Bhavya Pandya**  
-LinkedIn: https://www.linkedin.com/in/bhavya-91p/
+## Tech Stack
+
+| Layer | Tool |
+|-------|------|
+| Dashboards | Streamlit |
+| Data Processing | Pandas |
+| Visualizations | Plotly |
+| Language | Python |
+
+---
+
+## Repo Structure
+
+```
+AI-Sales-Dashboard/
+├── sales_data.csv
+├── A2_Diagnostic_Dashboard/
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── case-study.md
+│   └── screenshots.png
+└── A3_Decision_Dashboard/
+    ├── app.py
+    ├── requirements.txt
+    ├── case-study.md
+    └── screenshots.png
+```
+
+---
+
+## What This Demonstrates
+
+- Separating **diagnosis from decision** as an architectural choice, not an afterthought
+- Building analytics tools that are **safe for non-technical users**
+- Communicating findings at both the analyst level and executive level
+- Handling real, imperfect data without brittle assumptions
+
+---
+
+**Bhavya Pandya** · [LinkedIn](https://www.linkedin.com/in/bhavya-91p/) · M.S. Data Analytics, LIU Brooklyn
